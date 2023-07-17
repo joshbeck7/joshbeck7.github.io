@@ -1,0 +1,115 @@
+<html>
+    <head> <link rel="stylesheet" href="unit1.html"></head>
+    <body bgcolor="#222222">
+        <h1 style="padding: 10px 0px 0px 0px; font-family: Garamond, serif; font-size: 42px; color: #ff1878"><center><u>Feedback Form</u></center></h1>
+        <center>
+        <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit2assignmentoffline.html'">Index Page - Unit 2</button>
+        <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit1.html'">Unit 1</button>
+        </center>
+    <br /> 
+    <h1 style="font-family: Garamond, serif; font-size: 28px; color: #ff1878"><center> &lt;CYBERPUNK FUTURISM/&gt;</center></h1>
+    <br />
+    <hr /> 
+    <form>
+    <center>
+        <h1 style="font-style: Garamond, Serif; font-size: 28px; color: #fcee0c"><u>Feedback</u></h1>
+        <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left; margin: 0 auto;">
+
+      
+
+        <p style="font-style: Garamond, Serif; color: #fcee0c">1. How was your experience on the site?</p>
+        <textarea style="background-color: #222222; color: white;" type="text" name="find"></textarea>
+        <br />
+        <br /> 
+
+        <p style="font-style: Garamond, Serif; color: #fcee0c">2. How easy is the site to use?</p>
+        <input type="radio" id="ease-easy" name="ease" value="easy">
+        <label for="ease-easy" style="color: #0abdc6">Easy</label>
+        <input type="radio" id="ease-medium" name="ease" value="medium">
+        <label for="ease-medium" style="color: #0abdc6">Medium</label>
+        <input type="radio" id="ease-hard" name="ease" value="hard">
+        <label for="ease-hard" style="color: #0abdc6">Hard</label>
+        <br />
+        <br /> 
+
+        <p style="font-style: Garamond, Serif; color: #fcee0c">3. Did you enjoy the site?</p>
+        <input type="radio" name="enjoy" value="yes" id="enjoy-yes">
+        <label for="enjoy-yes" style="color: #0abdc6">Yes</label>
+        <input type="radio" name="enjoy" value="no" id="enjoy-no">
+        <label for="enjoy-no" style="color: #0abdc6">No</label>
+        <br />
+        <br /> 
+
+        <p style="font-style: Garamond, Serif; color: #fcee0c">4. How enjoyable did you find the design of the site?</p>
+        <input type="radio" name="design" value="very good" id="design-very good">
+        <label for="design-very good" style="color: #0abdc6">Very Good</label>
+
+        <input type="radio" name="design" value="good" id="design-good">
+        <label for="design-good" style="color: #0abdc6">Good</label>
+        
+        <input type="radio" name="design" value="okay" id="design-okay">
+        <label for="design-okay" style="color: #0abdc6">Okay</label>
+
+        <input type="radio" name="design" value="bad" id="design-bad">
+        <label for="design-bad" style="color: #0abdc6">Bad</label>
+
+        <input type="radio" name="design" value="very bad" id="design-very bad">
+        <label for="design-very bad" style="color: #0abdc6">Very Bad</label>
+
+       
+        <br />
+        <br /> 
+
+    <p style="font-style: Garamond, Serif; color: #fcee0c">5. What did you like most?</p>
+    <textarea style="background-color: #222222; color: white;" name="most_like"></textarea>
+    <br />
+    <br /> 
+
+    <p style="font-style: Garamond, Serif; color: #fcee0c">6. What did you like least?</p>
+    <textarea style="background-color: #222222; color: white;" name="least_like"></textarea>
+    <br />
+    <br /> 
+
+    <p style="font-style: Garamond, Serif; color: #fcee0c">7. How can the site be improved?</p>
+    <textarea style="background-color: #222222; color: white;" name="improvement"></textarea>
+    <br />
+    <br /> 
+
+    <p style="font-style: Garamond, Serif; color: #fcee0c">8. What is your favorite science fiction book, if any?
+        <br />
+        <br />
+    <select style="background-color: #222222; color: white;" name="SciFiBook">
+        <option>None</option>
+        <option>The Three Body Problem</option>
+        <option>Dune</option>
+        <option>1984</option>
+        <option>Fahrenheit 451</option>
+        <option>The Martian</option>
+        <option>Other...</option>
+        
+    </select>
+</p>
+<br />
+
+    <p style="font-style: Garamond, Serif; color: #fcee0c">9. What are your interests within the page?</p>
+    <ul style="padding-left: 0; list-style-type: none;">
+        <li><input type="checkbox" name="interest" value="Cyberpunk"><label for="interest" style="color: #0abdc6">Cyberpunk</label></li>
+        <li><input type="checkbox" name="interest" value="The Future"><label for="interest" style="color: #0abdc6">The Future</label></li>
+        <li><input type="checkbox" name="interest" value="Science Fiction"><label for="interest" style="color: #0abdc6">Science Fiction</label></li>
+        <li><input type="checkbox" name="interest" value="Technology"><label for="interest" style="color: #0abdc6">Technology</label></li>
+        <li><input type="checkbox" name="interest" value="Other"><label for="interest" style="color: #0abdc6">Other</label></li>
+        <li><input type="checkbox" name="interest" value="None" checked><label for="interest" style="color: #0abdc6">None</label></li>   
+    </ul>
+    <br />
+    <br /> 
+</div>
+</div>
+
+   <input style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222; width: 100px; height: 50px" type="submit" value="Submit">
+</form>
+</center>
+
+<hr />
+    </body>
+</html>
