@@ -5,6 +5,7 @@
         <center>
         <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='index.html'">Index Page - Unit 2</button>
         <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit1.html'">Unit 1</button>
+        <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit3designdoc.html'">Unit 3 - Design Doc</button>
         </center>
     <br /> 
     <h1 style="font-family: Garamond, serif; font-size: 28px; color: #ff1878"><center> &lt;CYBERPUNK FUTURISM/&gt;</center></h1>
@@ -57,7 +58,6 @@
         <input type="radio" name="design" value="very bad" id="design-very bad">
         <label for="design-very bad" style="color: #0abdc6">Very Bad</label>
 
-       
         <br />
         <br /> 
 
@@ -105,10 +105,25 @@
     <br /> 
 </div>
 </div>
+<button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="generateRandomNumber()">Generates between 0-100, and then multiples it by 10.</button>
+
+<script>
+  function generateRandomNumber() {
+    let randomNumber = Math.floor(Math.random() * 101);
+    let result = randomNumber * 10;
+    alert(result);
+  }
+</script>
+
+<br/>
+<br/>
+<br/>
 
    <input style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222; width: 100px; height: 50px" type="submit" value="Submit">
 </form>
 </center>
+
+
 
 <hr />
     </body>
