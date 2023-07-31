@@ -6,6 +6,7 @@
         <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='index.html'">Index Page - Unit 2</button>
         <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit1.html'">Unit 1</button>
         <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit3designdoc.html'">Unit 3 - Design Doc</button>
+        <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="window.location.href='unit4.html'">Unit 4 - How To</button>
         </center>
     <br /> 
     <h1 style="font-family: Garamond, serif; font-size: 28px; color: #ff1878"><center> &lt;CYBERPUNK FUTURISM/&gt;</center></h1>
@@ -114,6 +115,24 @@
     alert(result);
   }
 </script>
+<br />
+<br />
+<br />
+
+<button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222" onclick="generateDiscount()">Get Discount</button>
+
+<center>
+<script>
+function generateDiscount() {
+  let discount = Math.floor(Math.random() * 100);
+  if (discount > 90) {
+    alert("It's FREE!!!");
+  } else {
+    alert("Your discount is " + discount + "%");
+  }
+}
+</script>
+</center>
 
 <br/>
 <br/>
