@@ -11,6 +11,7 @@ p {
 h3 {
     color: #fcee0c;
     padding: 10px 10px 10px 10px;
+    text-align: center;
 }
 
 h6 {
@@ -28,4 +29,14 @@ ul {
 
 .paragraph-hover:hover {
     color: darkorange;
+}
+
+h4 {
+    color: #ff1878;
+    text-align: center;
+}
+
+li {
+    color: #0abdc6;
+    text-align: center;
 }
