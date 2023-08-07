@@ -1,0 +1,433 @@
+<html>
+    <head> <link rel="stylesheet" type="text/css" href="styles.css"> </head>
+    <body bgcolor="#222222">
+       <div class="header" style="width:100%;">
+        <a href="#" id="unit1" onclick="scrollToTop()" style="float: left; font-size: 10px; margin-left: 10px;">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/206/759/original/letter-c-typograpy-futuristic-vector.jpg" alt="C" width="50px">
+        </a>        
+        <h1 style="padding: 10px 0px 0px 0px; font-family: Garamond, serif; font-size: 42px; color: #ff1878"><center>&lt;CYBERPUNK FUTURISM/&gt;</center></h1>
+       <a style="color: #fcee0c; margin-right: 20px;" href="javascript:void(0);" onclick="toggleDropdown()">&#9776;</a>
+
+       <div style="background-color: #222222; color: #0abdc6;" id="dropdown" class="dropdown">
+        <a href="#" onclick="scrollToTop()">Unit 1</a>
+        <a href="#unit2">Unit 2</a>
+        <a href="#unit3">Unit 3</a>
+        <a href="#unit4">Unit 4</a>
+        <a href="#unit5">Unit 5</a>
+        <a href="#unit6"  onclick="window.location.href='unit1.html'"">OLD</a>
+       </div>
+    </div>
+
+    <!-- end of header -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- First section -->
+    <div style="display: flex; align-items: center; text-align: left;">
+        <div style="text-align: left;">
+        <h3 style="font-family: Garamond, serif; font-size: 32px; color: #fcee0c; 
+        margin-left: 35px;"><big><b>Why am I interested in Cyberpunk Futurism?</big></b></h3>
+        <p style="font-size: 24px; justify-content: left; margin-right: 1px;"> I find 
+            it has many parallels to the way corporate structure and the first world is 
+            going now. 
+            Cyberpunk is a warning to what may happen if the government allows 
+            unchecked corporations to get out of hand. Unfortunately, this is evident 
+            during congress hearings on new technologies. 
+            In which they clearly lack the understanding of these new technologies. 
+            As well as the lack of any actual antitrust breakups in recent decades. </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixli
+        b=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto
+        =format&fit=crop&w=1170&q=80" alt="picture" width="615" height="400" 
+        style="margin-left: 10px;">
+    </div>
+
+       
+    
+    <!-- Second Section -->
+    <div style="display: flex; text-align: right;">
+        <div id="player" style="margin-left: 50px"></div>
+        <script>
+          var tag = document.createElement('script');
+    
+          tag.src = "https://www.youtube.com/iframe_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+              height: '390',
+              width: '3000',
+              videoId: '-8bayOKcN64',
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+    
+          function onPlayerReady(event) {
+            event.target.playVideo();
+          }
+    
+
+          function onPlayerStateChange(event) {
+            console.log("Player state changed to: " + event.data);
+          }
+        </script>
+        <div style="text-align: right;">
+            <h3 style="font-family: Garamond, serif; font-size: 32px; color: #fcee0c; 
+            margin-right: 35px;"><big><b>The Pros of Cyberpunk. </big></b></h3>
+                <p style="font-size: 24px; justify-content: left; margin-left: 50px;"> Many advancements in recent human history have been mostly digital. 
+                        Although, with the exponential advancement of Artificial Intelligence that will soon change. 
+                        In that, the physical world will start to begin to change. New methods and procedures in material science are brought about because of the new age of accelerated tech.
+                        Redefining the capabilities of our societies. </p>
+                
+                      
+                        
+        </div>
+    </div>
+    
+    <!-- Third Section -->
+
+    <div style="display: flex; align-items: center; text-align: left;">
+        <div style="text-align: left;">
+            <h3 style="font-family: Garamond, serif; font-weight: bold; font-size: 32px; color: #fcee0c; margin-left: 35px;"><big><b>Where do I see the future going?</big></b></h3>
+            <p id="unit2" style="padding: 5px 50px 10px 50px; font-family: Garamond, serif; font-size: 24px; color: #0abdc6"> 
+                I see the invention and usage of photonic chips as the new way forward. The limitations of electrons are beginning to exceed Moore’s Law.
+                Therefore, the photon will be able to enhance our current technology. With a significant decrease in thermal heat, and fast as light calculations. 
+                This technology can be used on 3-Dimensional Topological Dirac Semimetals, such as Graphene or Bismuth. Thus, taking full advantage of the wave and particle functionality of quasiparticles. 
+                 </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="picture" width="615" height="400"> 
+    </div>
+    
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+        <script>
+            function toggleDropdown() {
+              var dropdown = document.getElementById("dropdown");
+              if (dropdown.style.display === "none") {
+                dropdown.style.display = "flex";
+              } else {
+                dropdown.style.display = "none";
+              }
+            }
+          </script>
+          
+
+        <script>
+            function scrollToTop() {
+                window.scrollTo(0, 0);
+            }
+         </script>
+
+         <hr />
+         <!-- Unit 2 Index-->
+
+         <h3 style="font-family: Garamond, serif; font-size: 32px; color: #fcee0c"><big><b><center>About Me</big></b></center></h3>
+         <center><p style="padding: 5px 200px 30px 200px; font-family: Garamond, serif; font-size: 24px; color: #0abdc6">Hello, I am Joshua Beck. I left the military under a year ago to pursue my further goals of software. 
+             I learned a lot of technical skills with hardware and handling stress/structure while I was in. Furthermore, I am 
+             proficient in music production and audio engineering. Additionally, I trade market movements for stocks. 
+             <br />
+             <br />
+             Most importantly, I have a strong interest in technology. As technology will help alleviate suffering in the world. 
+             Thus, providing a better quality of life for all. Through technology I can do my part to help humanity become interplanetary.
+             Which will ensure its survivability in the case of an inevitable. </p>
+         </center>
+ 
+         <hr /> 
+        <!-- Links -->   
+        <center>
+         <table border="1" cellpadding="10" width="100%">
+        <trhead>
+         <tr>
+         <th style="font-family: Garamond, serif; color: #fcee0c; font-size: 22px;"> QUANTA MAGAZINE</th>
+         <th style="font-family: Garamond, serif; color: #fcee0c; font-size: 22px;"> ARXIV</th>
+         <th style="font-family: Garamond, serif; color: #fcee0c; font-size: 22px;"> EMERGENT MIND</th>
+        </tr>
+        </trhead>
+        <trbody>
+        <tr>
+         <td align="center" style="font-family: Garamond, serif; color: blue; font-size: 22px;"><a href="https://www.quantamagazine.org">Quanta Magazine</a></td>
+         <td align="center" style="font-family: Garamond, serif; color: blue; font-size: 22px;"><a href="https://arxiv.org">Arxiv</a></td>
+         <td align="center" style="font-family: Garamond, serif; color: blue; font-size: 22px;"><a href="https://www.emergentmind.com">Emergent Mind</a></td>
+        </tr>
+     </trbody>
+     <trbody>
+        <tr>
+         <td style="font-family: Garamond, serif; color: #0abdc6; font-size: 22px;"> Quanta Magazine, is a leading news site for advancements in various fields.</td>
+         <td style="font-family: Garamond, serif; color: #0abdc6; font-size: 22px;"> Arxiv, is a free open-access journal of new scientific research papers.</td>
+         <td style="font-family: Garamond, serif; color: #0abdc6; font-size: 22px;"> Emergent Mind, is an aggregated news website for latest AI news.</td>
+         </tr>
+     </trbody>
+     </table>
+     </center>
+ 
+
+
+
+         <!-- Unit 3 Feedback Form -->
+    
+         <hr />
+         <br /> 
+         <form>
+         <center>
+             <h1 style="font-style: Garamond, Serif; font-size: 50px; color: #fcee0c" id="unit3"><u>Feedback</u></h1>
+             <div style="text-align: center;">
+                 <div style="display: inline-block; text-align: left; margin: 0 auto;">
+     
+           
+            <div style="text-align: center">
+             <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -185px; font-size: 32px;">1. How was your experience on the site?</p>
+             <textarea style="background-color: #222222; color: white; width: 100%;" type="text" name="find"></textarea>
+            </div>
+             <br />
+             <br /> 
+     
+             <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">2. How easy is the site to use?</p>
+             <input type="radio" id="ease-easy" name="ease" value="easy">
+             <label for="ease-easy" style="color: #0abdc6; font-size: 24px;">Easy</label>
+             <input type="radio" id="ease-medium" name="ease" value="medium">
+             <label for="ease-medium" style="color: #0abdc6; font-size: 24px">Medium</label>
+             <input type="radio" id="ease-hard" name="ease" value="hard">
+             <label for="ease-hard" style="color: #0abdc6; font-size: 24px">Hard</label>
+             <br />
+             <br /> 
+     
+             <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">3. Did you enjoy the site?</p>
+             <input type="radio" name="enjoy" value="yes" id="enjoy-yes">
+             <label for="enjoy-yes" style="color: #0abdc6; font-size: 24px">Yes</label>
+             <input type="radio" name="enjoy" value="no" id="enjoy-no">
+             <label for="enjoy-no" style="color: #0abdc6; font-size: 24px">No</label>
+             <br />
+             <br /> 
+     
+             <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">4. How enjoyable did you find the design of the site?</p>
+             <input type="radio" name="design" value="very good" id="design-very good">
+             <label for="design-very good" style="color: #0abdc6; font-size: 24px">Very Good</label>
+     
+             <input type="radio" name="design" value="good" id="design-good">
+             <label for="design-good" style="color: #0abdc6; font-size: 24px">Good</label>
+             
+             <input type="radio" name="design" value="okay" id="design-okay">
+             <label for="design-okay" style="color: #0abdc6; font-size: 24px">Okay</label>
+     
+             <input type="radio" name="design" value="bad" id="design-bad">
+             <label for="design-bad" style="color: #0abdc6; font-size: 24px">Bad</label>
+     
+             <input type="radio" name="design" value="very bad" id="design-very bad">
+             <label for="design-very bad" style="color: #0abdc6; font-size: 24px">Very Bad</label>
+     
+             <br />
+             <br /> 
+     
+         <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">5. What did you like most?</p>
+         <textarea style="background-color: #222222; color: white; width: 100%;" name="most_like"></textarea>
+         <br />
+         <br /> 
+     
+         <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">6. What did you like least?</p>
+         <textarea style="background-color: #222222; color: white; width: 100%;" name="least_like"></textarea>
+         <br />
+         <br /> 
+     
+         <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">7. How can the site be improved?</p>
+         <textarea style="background-color: #222222; color: white; width: 100%;" name="improvement"></textarea>
+         <br />
+         <br /> 
+     
+         <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">8. What is your favorite science fiction book, if any?
+             <br />
+             <br />
+         <select style="background-color: #222222; color: white; height: 50px; font-size: 20px; width: 100%;" name="SciFiBook">
+             <option>None</option>
+             <option>The Three Body Problem</option>
+             <option>Dune</option>
+             <option>1984</option>
+             <option>Fahrenheit 451</option>
+             <option>The Martian</option>
+             <option>Other...</option>
+             
+         </select>
+     </p>
+     <br />
+     
+         <p style="font-style: Garamond, Serif; color: #fcee0c; margin-left: -50px; font-size: 32px;">9. What are your interests within the page?</p>
+         <ul style="padding-left: 0; list-style-type: none;">
+             <li><input type="checkbox" name="interest" value="Cyberpunk"><label for="interest" style="color: #0abdc6; font-size: 24px">Cyberpunk</label></li>
+             <li><input type="checkbox" name="interest" value="The Future"><label for="interest" style="color: #0abdc6; font-size: 24px">The Future</label></li>
+             <li><input type="checkbox" name="interest" value="Science Fiction"><label for="interest" style="color: #0abdc6; font-size: 24px">Science Fiction</label></li>
+             <li><input type="checkbox" name="interest" value="Technology"><label for="interest" style="color: #0abdc6; font-size: 24px">Technology</label></li>
+             <li><input type="checkbox" name="interest" value="Other"><label for="interest" style="color: #0abdc6; font-size: 24px">Other</label></li>
+             <li><input type="checkbox" name="interest" value="None" checked><label for="interest" style="color: #0abdc6; font-size: 24px">None</label></li>   
+            </ul>
+         <br />
+         <br /> 
+     </div>
+     </div>
+     <button style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222; width: 350px; height: 75px; font-size: 18px;" onclick="generateRandomNumber(); return false;">Generates between 0-100, and then multiples it by 10.</button>
+     <br />
+     <script>
+       function generateRandomNumber() {
+         let randomNumber = Math.floor(Math.random() * 101);
+         let result = randomNumber * 10;
+         alert(result);
+       }
+     </script>
+     <br />
+     <br />
+     <br />
+     
+     <button href="javascript:void(0)"  style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222; width: 200px; height: 75px; font-size: 18px;" onclick="generateDiscount(); return false;">Get Discount</button>
+     
+     <script>
+     function generateDiscount() {
+       let discount = Math.floor(Math.random() * 100);
+       if (discount > 90) {
+         alert("It's FREE!!!");
+       } else {
+         alert("Your discount is " + discount + "%");
+       }
+     }
+     </script>
+<br />
+     
+     <br/>
+     <br/>
+     <br/>
+     
+        <input style="font-style: Garamond, Serif; color: #fcee0c; background-color: #222222; width: 200px; height: 100px; font-size: 18px;" type="submit" value="Submit">
+     </form>
+     
+    <br />
+     
+     <hr />
+
+
+     <!-- Unit 4 -->
+     <br />
+     <br />
+            <h2 style="color: #ff1878; font-size: 48px;" id="unit4"><u>How To : Trade Stocks</u></h2>
+        </center>
+        <br />
+        <br />
+        <br />
+        <div style="display: flex; align-items: center; text-align: left; flex-direction: row;">
+            <img src="https://img.mensxp.com/media/content/2022/Oct/yoga-lotus-pose-meditation_635b7b1822f7c.jpeg" alt="Yoga Lotus Pose Meditation" width="700px">
+            <div style="text-align: left;">
+            
+                  
+                    <h3 style="font-size: 32px; margin-left: 40px; text-align: left;">Mindset</h3>
+                    <h4 style="font-size: 32px; margin-left: 47px;">Goals</h4>
+                    <p style="margin-left: 0px; font-size: 24px;"> One needs to ensure they are in the right mindset. No stressors affecting them at the current moment. As all the little subconscious things can effect one's trading experience.
+            
+                        Additionally one should have backtested strategies throughout to ensure they have a positive expected value in the market.
+                        
+                        Most importantly what are the goals of the stock trader. Is it for retirement money, quick cash, or a living? These are fundamentally different mindsets. I trade all 3 ways simultaneously. 
+                        </p>
+            </div>
+        </div>
+
+
+       
+            
+
+        <center>
+           
+        </center>
+
+     
+        <br />
+        <br />
+
+        <div style="display: flex; text-align: left;">
+            <div style="text-align: left;">
+                <h3 style="font-size: 42px; margin-left: 40px;"> Research</h3>
+                <p style="font-size: 26px;"> One must do proper research to position themselves positively. </p>
+                <h4 style="font-size: 32px; margin-left: 45px;"> News</h4>
+                <p style="font-size: 26px;">What is the current news in the markets? As this is how even the most novice of traders will look at the market. Once one figures that out they can choose to go for fundamental analysis.</p>
+                <h4 style="font-size: 32px; margin-left: 45px;"> Fundamental Analysis</h4>
+                <p style="font-size: 26px;"> Is the stock they are about to invest in overvalued, undervalued, or at fair value? Is it a value stock or a growth stock?</p>
+                <h4 style="font-size: 32px; margin-left: 45px;"> Technical Analysis</h4>
+                <p style="font-size: 26px;"> Technical Analysis is for one to stare at the charts and to see which way the direct market is influencing the stock. Is the stock deviating from the mean or trending towards it? </p>
+                
+            </div>
+            <iframe src="https://giphy.com/embed/iYTXFJofI7I987H92k" style="margin-right: -85px; width: 1500px; height: 1000px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/stocks-stockmarket-graphs-iYTXFJofI7I987H92k"></a></p>
+        </div>
+
+
+     
+        <center>
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/8jmjxXc5H8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+        
+        
+        <br />
+        <br />
+
+
+
+    <center>
+        <h3 style="font-size: 42px;"> Risk Management</h3>
+        <h4 style="font-size: 32px;"> Kelly Criterion</h4>
+        <p style="font-size: 26px; padding: 0px 200px 0px 200px;"> Most traders use the 2% of their portfolio rule. While others use Kelly Criterion calculations. Do not use Kelly Criterion unless one has tested they're specific strategy a 1000 times to see an assessment. Another thing to watch out for is ranging markets which occur 85% of the time.</p>
+    </center>
+
+    <br />
+    <br />
+        <center>
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/-9JM9suCIHs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+        
+        <br />
+
+        <center>
+        <h3 style="font-size: 42px;"> Simple Trade Scenario</h3>
+    </center>
+        <p style="font-size: 26px; padding: 0px 200px 0px 200px;"> Say I want to trade a stock. I will wake up early before the market opens. 
+            Then I will check for volume of stocks to see if they are larger than normal.
+            Then I will visit sites to check out the news for that stock and see the social media sentiment.
+            If everything is positive then I will check the charts to see if those are positive as well. 
+            Then by checking the fundamentals quickly I can see if a trade is worth my time or not. If it is then
+            I lock in for an appropriate amount of Kelly Criterion portfolio sizing and wait until my stock hits one of two levels.
+        </p>
+        <center>
+        <ul style="font-size: 26px; padding: 0px 200px 0px 200px; color: #ff1878">
+            <li> ThinkOrSwim for Trading</li>
+            <li> TradingView for Charts</li>
+            <li> WallStreetZen for Fundamentals</li>
+            <li> Newsfilter for News</li>
+            <li> Yahoo Finance for Volume</li>
+        </ul>
+        </center>
+        <br />
+
+        <center>
+            <img src="https://en.opensuse.org/images/a/ab/Thinkorswim-screenshot.png" alt="ThinkOrSwim" width="960px">
+        </center>
+        
+        <h1 id="unit5" ></h1>
+        <br />
+        <br />
+
+
+        <iframe
+      onload="javascript:parent.scrollTo(0,0);"
+      height="750" allowTransparency="true"
+      frameborder="0" scrolling="yes"
+      style="width:100%;border:none"
+      src="https://joshua-beck.formaloo.co/6l1r5"
+      id="formalooIframe"></iframe>
+        
+    </body>
+</html>
